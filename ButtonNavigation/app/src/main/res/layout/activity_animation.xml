@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimationStart"
+    android:orientation="vertical"
+
+    android:background="#C6E2FF"
+
+
+    >
+
+
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
+            android:textSize="18sp" />
+
+
+
+
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie"
+            android:layout_width="match_parent"
+            android:layout_height="560dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/tv"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/heart"
+
+            />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pursuit comes from love"
+        android:textAlignment="center"
+        android:layout_below="@+id/lottie"
+        android:gravity="center_horizontal"
+        android:textSize="27sp"
+        />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/welcomename"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/textView4"
+        android:textSize="19sp"
+        android:gravity="center_horizontal" />
+
+
+
+</RelativeLayout>
+
+
+

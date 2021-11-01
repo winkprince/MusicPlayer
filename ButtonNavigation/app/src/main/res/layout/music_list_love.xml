@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="1"
+        android:textSize="20sp">
+
+    </TextView>
+
+
+    <com.example.buttonnavigation.RoundImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/touxiang" />
+
+    <TextView
+        android:id="@+id/song_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/hotpink"
+        android:textStyle="bold"
+        tools:text="songName" />
+
+    <TextView
+        android:id="@+id/singer_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/song_Name"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        tools:text="singer" />
+
+
+    <com.like.LikeButton
+        android:id="@+id/likeButton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:liked="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        app:anim_scale_factor="1.5"
+        app:circle_end_color="@color/colorAccent"
+        app:circle_start_color="@color/colorPrimary"
+        app:dots_primary_color="@color/colorAccent"
+        app:dots_secondary_color="@color/colorPrimary"
+        app:icon_size="25dp"
+        app:icon_type="heart" />
+
+
+
+
+
+
+
+</RelativeLayout>

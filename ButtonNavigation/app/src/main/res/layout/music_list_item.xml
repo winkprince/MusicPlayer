@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+<com.example.buttonnavigation.RoundImageView
+    android:id="@+id/iv_photo"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:scaleType="centerCrop"
+    android:src="@drawable/touxiang"/>
+
+    <TextView
+        android:id="@+id/song_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="songName"
+        android:layout_marginLeft="70dp"
+        android:textColor="@color/hotpink"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+    />
+    <TextView
+        android:id="@+id/singer_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="singer"
+        android:layout_marginLeft="70dp"
+        android:layout_below="@+id/song_Name"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:layout_alignParentRight="true">
+        <TextView
+            android:id="@+id/music_duration"
+            android:layout_marginLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="03:00"
+
+            tools:ignore="NotSibling" />
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
